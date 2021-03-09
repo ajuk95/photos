@@ -17,11 +17,11 @@ export default function Photos (){
     
     React.useEffect(() => {
         fetchImages();
-    },[]);
+    });
     
     const fetchImages = (count = 15) => {
         const apiRoot = "https://api.unsplash.com";
-        const accessKey = "nP3ufTkXeJvnKZUmFMNKUeFF-ybpH7vn_pG9PSLjvJs";
+        const accessKey = "urvZ9Na7-BukiQ9TM-Vdls78irYS_chT7bi_qwm5q_M";
         axios
         .get(`${apiRoot}/photos/random?client_id=${accessKey}&count=${count}`)
         .then (response => {
