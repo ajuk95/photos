@@ -17,7 +17,7 @@ export default function Photos (){
     
     React.useEffect(() => {
         fetchImages();
-    });
+    },[]);
     
     const fetchImages = (count = 15) => {
         const apiRoot = "https://api.unsplash.com";
